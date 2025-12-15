@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Profile</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Simple Navigation -->
+<div class="navbar">
+	<h2>
+		<a href="#home">Home</a> |
+		<a href="#about">About Me</a>
+	</h2>
+</div>
+<hr>
+
+<!-- 2-Column Layout -->
+<div class="container">
+	<div class="row">	
+		<!-- LEFT COLUMN -->
+		<div class="column" id="home">
+			<div>
+				<img class="profile-img" src="image111.jpg" height="200" alt="Profile Image"><br><br>
+				<h1 class="name-heading">Rain Mendoza</h1>
+				<span class="job-title">IT Student</span>
+			</div>
+			<hr>
+			<div>
+				<h3>Contact</h3>
+				<p class="contact">Email: rainvmendoza@proton.me</p>
+			</div>
+			<hr>
+			<div>
+				<h3 class="tab">Skills</h3>
+				<dl>
+					<dd>Academic Writing</dd>
+					<dd>Outsystems</dd>
+					<dd>Java</dd>
+				</dl>
+			</div>
+			<hr>
+			<div>
+				<h3 class="tab">Achievements</h3>
+				<dl>
+					<dd>Won in OSINT seminar semi-competition</dd>
+					<dd>Dean's lister</dd>
+				</dl>
+			</div>
+		</div>
+
+		<!-- RIGHT COLUMN -->
+		<div class="column" id="about">
+			<div>
+				<h2 class="tab">About Me</h2>
+					<p>Currently studying BSIT in NU Fairview, I am interested in pursuing a career in Cyber Security. For this end, I am doing the utmost I can to acquire the necessary skills in my free time. </p>
+			</div>
+			<hr>
+			<div>
+				<h2 class="tab">Message Me</h2>
+				<form action="submit" method="post">
+					<p>
+					Name:<br><input type="text" name="name">
+					</p>
+					<p>
+					Email:<br><input type="email" name="email">
+					</p>
+					<p>
+					Your message:<br><textarea id="message" name="user_message" rows="5" cols="70" placeholder="Type your message here..."></textarea>
+					</p>
+					<p>
+					<input type="submit" value="Send">
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<hr>
+<!-- FOOTER -->
+<div>
+<p><center><strong>WebProg - Web Programming 2025</strong></center></p>
+</div>
+</body>
+</html
