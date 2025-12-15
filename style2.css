@@ -1,0 +1,56 @@
+.navbar a{
+	text-decoration: none;
+	padding: 10px;
+}
+
+.navbar a:hover {
+	color: blue;
+}
+
+.column {
+	float: left;
+	width: 50%;
+	height: 50%;
+	text-align: left;
+	color: darkgoldenrod;
+	border-radius: 10px;
+}
+
+.column p {
+	color: black;
+}
+
+.column dd {
+	color: black;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.profile-img {
+	width: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.name-heading {
+	color: dimgray;
+	font-style: italic;
+	font-style: oblique;
+}
+
+.job-title {
+	color: gray;
+	font-style: italic;
+}
+
+.contact {
+	color: darkgoldenrod;
+}
+
+body {
+	background-color: lightblue;
+}
