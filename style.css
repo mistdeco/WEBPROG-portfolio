@@ -1,0 +1,199 @@
+body {
+ font-family: "Segoe UI";
+ line-height: 1.5;
+ color: #111827;
+ background: linear-gradient(180deg, #f4fafc 0%, linen 100%);
+}
+html, body {
+ min-height: 100%;
+}
+
+.navbar a {
+ text-decoration: none;
+ padding: 10px;
+ color: brown;
+}
+.navbar a:hover {
+ color: cornflowerblue;
+ font-weight: bolder;
+}
+
+.profile-img {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 40px;
+ width: 150px;
+ height: 150px;
+ border-radius: 50%;
+ object-fit: cover;
+}
+.full-name {
+ font-weight: bold;
+ text-align: center;
+}
+.job-title {
+ color: gray;
+ font-style: italic;
+ text-align: center;
+}
+
+#main-content {
+ margin: 18px auto;
+ width: calc(100% - 32px);
+ max-width: 1100px;
+}
+#main-content > tbody, #main-content > tbody > tr {
+ display: flex;
+ flex-wrap: wrap;
+ width: 100%;
+ gap: 18px;
+}
+
+#main-content td {
+ display: block;
+ flex: 0 0 calc(50%-9px);
+ padding: 22px;
+ border-radius: 18px;
+ border: 1px solid rgba(17,24,39,.08);
+ vertical-align: top;
+ background: linear-gradient(180deg, #f4fafc 0%, linen 100%);
+ box-shadow:
+    0 10px 30px rgba(17,24,39,.08),
+    0 2px 8px rgba(17,24,39,.06);
+}
+
+.left-column, .right-column{
+ flex: initial;
+ width: 50%;
+}
+.left-column {
+ flex: 1;
+}
+.right-column {
+ flex: 2;
+}
+
+.email {
+ text-decoration-line: underline;
+ font-style: italic;
+}
+.email:hover {
+ color: brown;
+}
+
+.input {
+ width: 80%;
+ padding: 10px 12px;
+ transition: border-color .2s ease, box-shadow .2s ease;
+ border: 1px solid rgba(17,24,39,.18);
+ border-radius: 12px;
+}
+
+#send {
+ background: linen;
+ color: brown;
+ border-color: darkgray;
+ border-radius: 12px;
+ padding: 10px 14px; 
+ font-weight: 900;
+ cursor: pointer;
+}
+
+#send:hover, .button:hover {
+ background: brown;
+ color: whitesmoke;
+}
+
+#toggleSkillsBtn, #charsleft {
+ color: gray;
+ border-color: transparent;
+ background: transparent;
+}
+
+.button {
+ background: linen;
+ color: brown;
+ border-color: darkgray;
+ border-radius: 12px;
+ padding: 10px 14px;
+ font-weight: 900;
+ cursor: pointer;
+ display: block;
+ margin: 18px auto;
+}
+
+hr {
+ height: 1px;
+ background: linear-gradient(90deg, transparent, brown, transparent);
+ width: min(60%, 900px);
+ margin: 18px auto;
+ border: 0;
+}
+
+.footer {
+ color: rgba(17,24,39,.75);
+}
+
+html {
+ scroll-behavior: smooth;
+}
+
+
+/* dark mode!! */
+body.dark-mode {
+ color: #e5e7eb;
+ background: linear-gradient(180deg, black 0%, #0b2a1f 100%);
+}
+
+body.dark-mode .navbar a {
+ color: #e5e7eb;
+}
+
+body.dark-mode .navbar a:hover {
+ color: cornflowerblue;
+ font-weight: bolder;
+}
+
+body.dark-mode .job-title {
+ color: whitesmoke;
+}
+
+body.dark-mode .email:hover {
+ color: darkseagreen;
+}
+
+body.dark-mode #main-content td {
+ background: linear-gradient(180deg, black 0%, #052e22 100%);
+ border: 1px solid #ffffff1a;
+ box-shadow: 0 10px 30px #00000073, 0 2px 8px #00000059;
+}
+
+body.dark-mode .input {
+ background: #052e22d9;
+ border: 1px solid #ffffff24;
+ color: #e5e7eb;
+}
+body.dark-mode .input:focus {
+ outline: none;
+ border-color: #86efacbf;
+ box-shadow: 0 0 0 4px #86efac2e;
+}
+
+body.dark-mode #send, body.dark-mode .button {
+ background: #052e22e6;
+ color: #e5e7eb;
+ border-color: #ffffff2e;
+}
+body.dark-mode #send:hover, body.dark-mode .button:hover {
+ background: #86efac;
+ color: #052e22;
+}
+
+body.dark-mode hr {
+ background: linear-gradient(90deg, transparent, #86efaca6, transparent);
+}
+
+body.dark-mode .footer{
+  color: #e5e7ebb2;
+}
